@@ -1,2 +1,0 @@
-
-bot.login(process.env.token)
