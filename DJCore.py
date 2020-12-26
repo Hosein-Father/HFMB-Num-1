@@ -8,9 +8,7 @@ bot.initials = ('modules.misc', 'modules.music', 'modules.handler', 'modules.own
 bot.owner = int(os.getenv('OWNER'))
 bot.color = int(os.getenv('COLOR'), 16)
 
-@bot.check
-async def _bot_protection(ctx):
-    return not ctx.author.bot
+
 
 @bot.event
 async def on_ready():
